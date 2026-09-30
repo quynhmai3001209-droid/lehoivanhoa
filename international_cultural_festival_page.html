@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>International Cultural Festival & Registration</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;background:#fdf8ef;color:#1a324b}
+
+/* Hero Section */
+.hero{padding:45px 20px 35px;text-align:center;background:linear-gradient(135deg,#4ac7ec,#ffd15c);border-radius:0 0 35px 35px;box-shadow:0 6px 20px rgba(0,0,0,0.08)}
+h1{margin:0;font-size:32px;letter-spacing:0.5px;color:#0e2a47;text-transform:uppercase}
+.sub{margin:10px 0 0;font-size:16px;font-weight:600;color:#2a4868}
+
+/* Layout Container */
+.wrap{max-width:1000px;margin:auto;padding:25px 16px 50px}
+.intro{text-align:center;font-size:16px;line-height:1.6;margin-bottom:28px;color:#334e68}
+
+/* Stall Cards Grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#ffffff;border-radius:24px;padding:18px;box-shadow:0 8px 24px rgba(0,0,0,0.06);border:1px solid #ebd9b9;transition:transform 0.2s;display:flex;flex-direction:column;justify-content:space-between}
+.card:hover{transform:translateY(-3px)}
+
+/* Visual / SVG Container */
+.visual{height:160px;border-radius:18px;background:#fcf5e5;display:flex;align-items:center;justify-content:center;margin-bottom:15px;overflow:hidden;border:1px solid #f2e2c4}
+.visual svg{width:100%;height:100%}
+
+/* Card Content */
+.head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.flag{font-size:36px;line-height:1}
+.country{font-size:22px;font-weight:800;color:#0f2b48}
+.tag{font-size:12px;color:#6b7c93;font-weight:600;margin-top:2px}
+
+.menu-list{margin-bottom:12px}
+.item{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed #e2d5c3;font-size:14px}
+.item:last-child{border:0}
+.price{font-weight:700;color:#c84b31;white-space:nowrap}
+
+.culture{padding:12px 14px;background:#fff5db;border-radius:14px;font-size:13px;line-height:1.5;color:#2c3e50;border-left:4px solid #f3b043}
+.culture b{display:block;margin-bottom:4px;color:#8a4b08;font-size:14px}
+
+/* Festival Activities */
+.activities{margin:35px 0 15px;background:linear-gradient(135deg,#17324d,#0f2338);color:white;border-radius:24px;padding:26px;box-shadow:0 10px 25px rgba(23,50,77,0.25)}
+.activities h2{margin:0 0 12px;font-size:22px;color:#ffd15c}
+.activities p{margin:8px 0;line-height:1.6;font-size:15px}
+.passport-tag{margin-top:12px;display:inline-block;padding:6px 14px;background:rgba(255,255,255,0.12);border-radius:20px;font-weight:600;color:#e2f3ff}
+
+/* Registration Form Section */
+.registration-section{margin-top:40px;background:#ffffff;border-radius:24px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,0.07);border:1px solid #ebd9b9}
+.registration-section h2{margin:0 0 8px;font-size:24px;color:#0e2a47;text-align:center}
+.registration-section p.form-desc{text-align:center;color:#6d7780;margin:0 0 24px;font-size:14px}
+
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group.full-width{grid-column:1 / -1}
+label{font-size:13px;font-weight:700;color:#17324d;text-transform:uppercase;letter-spacing:0.5px}
+input, select, textarea{width:100%;padding:12px 14px;border:1.5px solid #dcd0bc;border-radius:12px;font-size:15px;font-family:inherit;background:#fdfcfa;color:#17324d;outline:none;transition:border-color 0.2s}
+input:focus, select:focus, textarea:focus{border-color:#4ac7ec;background:#fff;box-shadow:0 0 0 3px rgba(74,199,236,0.15)}
+
+.btn-submit{margin-top:20px;width:100%;padding:15px;background:linear-gradient(135deg,#e65c00,#F9D423);border:none;border-radius:14px;color:white;font-size:17px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(230,92,0,0.25);transition:transform 0.15s, box-shadow 0.15s}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(230,92,0,0.35)}
+.btn-submit:active{transform:translateY(0)}
+
+/* Footer Notes */
+.note{font-size:13px;color:#6d7780;text-align:center;margin-top:20px}
+.footer{text-align:center;margin-top:15px;font-size:12px;color:#8f99a3}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>🌍 INTERNATIONAL CULTURAL FESTIVAL</h1>
+  <div class="sub">One Festival · Many Cultures · One World</div>
+</section>
+
+<main class="wrap">
+  <div class="intro">
+    Welcome! Explore our cultural stalls, taste traditional cuisines, and immerse yourself in authentic objects, traditional attire, artwork, and souvenirs from around the globe.
+  </div>
+
+  <div class="grid">
+
+    <!-- VIETNAM -->
+    <article class="card">
+      <div>
+        <div class="visual">
+          <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" aria-label="Vietnam Culture">
+            <rect width="500" height="220" rx="18" fill="#fef2e2"/>
+            <circle cx="250" cy="90" r="65" fill="#fce4a6"/>
+            <path d="M 30 180 Q 70 110 110 180 Z" fill="#9db380"/>
+            <path d="M 80 180 Q 120 80 160 180 Z" fill="#718d53"/>
+            <path d="M 340 180 Q 380 90 420 180 Z" fill="#718d53"/>
+            <path d="M 390 180 Q 430 120 470 180 Z" fill="#9db380"/>
+            <rect x="0" y="170" width="500" height="50" fill="#76c4db"/>
+            <path d="M 200 135 L 250 85 L 300 135 Z" fill="#e8c374" stroke="#a37e32" stroke-width="3"/>
+            <path d="M 200 135 Q 250 145 300 135" fill="none" stroke="#a37e32" stroke-width="3"/>
+            <ellipse cx="70" cy="55" rx="18" ry="24" fill="#da3732"/>
+            <line x1="70" y1="20" x2="70" y2="31" stroke="#a3201d" stroke-width="3"/>
+            <line x1="70" y1="79" x2="70" y2="92" stroke="#d49a2a" stroke-width="3"/>
+            <text x="250" y="208" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#1b4332">Pho · Ao Dai · Conical Hat · Red Lanterns</text>
+          </svg>
+        </div>
+        <div class="head">
+          <span class="flag">🇻🇳</span>
+          <div>
+            <div class="country">Vietnam</div>
+            <div class="tag">Vietnam Stall · Vietnamese Corner</div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="item"><span>🍜 Traditional Beef Pho</span><span class="price">25.000đ</span></div>
+          <div class="item"><span>🥖 Vietnamese Baguette (Banh Mi)</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🥞 Crispy Rice Pancake (Banh Xeo)</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🍮 Sweet Dessert Soup (Che)</span><span class="price">15.000đ</span></div>
+        </div>
+      </div>
+      <div class="culture">
+        <b>🎎 Cultural Highlights</b>
+        Elegance of Ao Dai silk tunics, iconic Conical Hats (Non La), traditional bamboo handicrafts, and Hoi An lanterns.
+      </div>
+    </article>
+
+    <!-- CHINA -->
+    <article class="card">
+      <div>
+        <div class="visual">
+          <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" aria-label="China Culture">
+            <rect width="500" height="220" rx="18" fill="#fdeeee"/>
+            <path d="M 150 100 Q 250 60 350 100 L 330 80 Q 250 50 170 80 Z" fill="#cc2929"/>
+            <path d="M 180 130 L 320 130 L 320 100 L 180 100 Z" fill="#e2a036"/>
+            <rect x="235" y="105" width="30" height="25" fill="#8d1c1c"/>
+            <g transform="translate(80, 40)">
+              <line x1="25" y1="0" x2="25" y2="20" stroke="#990000" stroke-width="3"/>
+              <ellipse cx="25" cy="40" rx="22" ry="28" fill="#d82626"/>
+              <line x1="25" y1="68" x2="25" y2="85" stroke="#ffcc00" stroke-width="4"/>
+            </g>
+            <g transform="translate(370, 40)">
+              <line x1="25" y1="0" x2="25" y2="20" stroke="#990000" stroke-width="3"/>
+              <ellipse cx="25" cy="40" rx="22" ry="28" fill="#d82626"/>
+              <line x1="25" y1="68" x2="25" y2="85" stroke="#ffcc00" stroke-width="4"/>
+            </g>
+            <text x="250" y="200" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#8a1c1c">Peking Duck · Dim Sum · Hanfu · Calligraphy</text>
+          </svg>
+        </div>
+        <div class="head">
+          <span class="flag">🇨🇳</span>
+          <div>
+            <div class="country">China</div>
+            <div class="tag">China Stall · Chinese Corner</div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="item"><span>🥟 Handmade Dim Sum</span><span class="price">25.000đ</span></div>
+          <div class="item"><span>🥟 Steamed Buns (Baozi)</span><span class="price">15.000đ</span></div>
+          <div class="item"><span>🧋 Boba Milk Tea</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🦆 Peking Roast Duck</span><span class="price">25.000đ</span></div>
+        </div>
+      </div>
+      <div class="culture">
+        <b>🐉 Cultural Highlights</b>
+        Traditional Lion and Dragon Dances, delicate brush calligraphy, Hanfu apparel, and shadow puppetry arts.
+      </div>
+    </article>
+
+    <!-- JAPAN -->
+    <article class="card">
+      <div>
+        <div class="visual">
+          <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" aria-label="Japan Culture">
+            <rect width="500" height="220" rx="18" fill="#f6eff5"/>
+            <circle cx="250" cy="100" r="55" fill="#e64c65" opacity="0.85"/>
+            <path d="M 120 180 L 210 90 Q 250 110 290 90 L 380 180 Z" fill="#4a5568"/>
+            <path d="M 210 90 Q 250 110 290 90 L 308 110 Q 250 128 192 110 Z" fill="#ffffff"/>
+            <path d="M 60 180 L 60 110 M 120 180 L 120 110" stroke="#c53030" stroke-width="8"/>
+            <path d="M 45 115 L 135 115 M 50 128 L 130 128" stroke="#c53030" stroke-width="6"/>
+            <path d="M 360 40 Q 420 70 460 50" fill="none" stroke="#6f4e37" stroke-width="4"/>
+            <circle cx="390" cy="50" r="8" fill="#fbb6ce"/>
+            <circle cx="420" cy="62" r="9" fill="#fbb6ce"/>
+            <circle cx="440" cy="48" r="7" fill="#fbb6ce"/>
+            <text x="250" y="205" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#742a2a">Takoyaki · Kimono · Origami · Sakura</text>
+          </svg>
+        </div>
+        <div class="head">
+          <span class="flag">🇯🇵</span>
+          <div>
+            <div class="country">Japan</div>
+            <div class="tag">Japan Stall · Japanese Corner</div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="item"><span>🍢 Takoyaki (Octopus Balls)</span><span class="price">25.000đ</span></div>
+          <div class="item"><span>🍙 Salmon Onigiri</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🍵 Uji Matcha Tea</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🍡 Sweet Mochi Rice Cake</span><span class="price">15.000đ</span></div>
+        </div>
+      </div>
+      <div class="culture">
+        <b>🌸 Cultural Highlights</b>
+        Traditional Kimono dressing, intricate Origami paper crafts, Japanese Tea Ceremony, and Sensu folding fans.
+      </div>
+    </article>
+
+    <!-- KOREA -->
+    <article class="card">
+      <div>
+        <div class="visual">
+          <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" aria-label="Korea Culture">
+            <rect width="500" height="220" rx="18" fill="#eef5fc"/>
+            <circle cx="250" cy="95" r="50" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+            <path d="M 250 45 A 25 25 0 0 0 250 95 A 25 25 0 0 1 250 145 A 50 50 0 0 0 250 45 Z" fill="#cd2e3a"/>
+            <path d="M 250 145 A 25 25 0 0 0 250 95 A 25 25 0 0 1 250 45 A 50 50 0 0 0 250 145 Z" fill="#0047a0"/>
+            <path d="M 70 180 L 70 140 L 170 140 L 170 180 Z" fill="#334155"/>
+            <path d="M 50 140 Q 120 120 190 140 L 170 125 Q 120 110 70 125 Z" fill="#0f172a"/>
+            <path d="M 380 120 L 430 170" stroke="#78350f" stroke-width="5"/>
+            <path d="M 340 100 Q 380 60 420 100 Z" fill="#f59e0b"/>
+            <text x="250" y="205" text-anchor="middle" font-size="14" font-weight="bold" font-family="Arial" fill="#1e3a8a">Tteokbokki · Hanbok · K-Pop · Folk Games</text>
+          </svg>
+        </div>
+        <div class="head">
+          <span class="flag">🇰🇷</span>
+          <div>
+            <div class="country">Korea</div>
+            <div class="tag">Korea Stall · Korean Corner</div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="item"><span>🌶️ Spicy Rice Cakes (Tteokbokki)</span><span class="price">25.000đ</span></div>
+          <div class="item"><span>🍙 Kimbap Rice Rolls</span><span class="price">20.000đ</span></div>
+          <div class="item"><span>🥞 Sweet Hotteok Pancake</span><span class="price">15.000đ</span></div>
+          <div class="item"><span>🧃 Fruit Iced Tea</span><span class="price">20.000đ</span></div>
+        </div>
+      </div>
+      <div class="culture">
+        <b>🎶 Cultural Highlights</b>
+        Graceful Hanbok attire, K-Pop dance covers, traditional folk games (Tuho, Ddakji), and Minhwa folk paintings.
+      </div>
+    </article>
+
+  </div>
+
+  <section class="activities">
+    <h2>🎪 Special Festival Activities</h2>
+    <p>🎨 <b>Culture Challenge:</b> Complete interactive quizzes at each stall to win exclusive gifts.</p>
+    <p>🎯 <b>Traditional Games:</b> Enjoy ring tossing, arrow throwing (Tuho), and paper folding crafts.</p>
+    <p>📸 <b>Costume Photo Corner:</b> Try on traditional outfits (Ao Dai, Hanbok, Kimono) for souvenir photos.</p>
+    <p>🎁 <b>Stamp Hunt:</b> Collect stamps from all 4 country stalls to earn a festival passport badge!</p>
+    <div class="passport-tag">Festival Passport Routine: Visit → Taste → Learn → Collect → Enjoy!</div>
+  </section>
+
+  <section class="registration-section">
+    <h2>📝 Participant Registration Form</h2>
+    <p class="form-desc">Please complete the form below to register your attendance or volunteer participation with the Festival Organizing Committee.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Thank you! Your application has been successfully submitted to the Festival Organizing Committee.');">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="grade">Grade / Class / Organization *</label>
+          <input type="text" id="grade" name="grade" placeholder="e.g. Grade 10A2 or Organization" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +84 912 345 678" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. name@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="role">Participation Role *</label>
+          <select id="role" name="role" required>
+            <option value="" disabled selected>Select your role...</option>
+            <option value="visitor">Festival Visitor / Guest</option>
+            <option value="performer">Cultural Performer / Artist</option>
+            <option value="volunteer">Stall Volunteer / Assistant</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="favorite-stall">Preferred Cultural Stall</label>
+          <select id="favorite-stall" name="favorite-stall">
+            <option value="all">All Stalls / Undecided</option>
+            <option value="vietnam">🇻🇳 Vietnam Stall</option>
+            <option value="china">🇨🇳 China Stall</option>
+            <option value="japan">🇯🇵 Japan Stall</option>
+            <option value="korea">🇰🇷 Korea Stall</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="notes">Special Requests / Notes for Organizing Committee</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Enter any questions, dietary preferences, or additional details..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">🚀 SUBMIT APPLICATION</button>
+    </form>
+  </section>
+
+  <div class="note">✨ Discover food, clothing, art, games, crafts, and cultural souvenirs — an immersive global experience!</div>
+  <div class="footer">Prices and event schedules are managed for display purposes by the Festival Organizing Committee.</div>
+</main>
+
+</body>
+</html>
